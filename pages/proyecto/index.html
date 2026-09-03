@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caja</title>
+    <link rel="stylesheet" href="">
+    <style>
+      /*reseteo basico de css*/
+      *{
+        margin:0;
+        padding:0;
+
+        box-sizing:border-box;
+      }
+      body{
+        background-color: rgb(255, 128, 0);
+      }
+      .tarjeta{
+        background-color:white;
+        width: 600px;
+        /*absolutas o relativas */
+        margin:0 auto;
+        padding: 40px 40px 100px 40px;
+        border-bottom: 6px solid black;
+        border-top: 4px dashed pink;
+        border-bottom-right-radius: 60px;
+        outline: 2px solid gold;
+        box-shadow: 10px 10px 0 firebrick, 20px 20px 0 blueviolet, 30px 30px 0 greenyellow;
+      }
+      .tarjeta h2{
+        margin-bottom: 15px;
+      }
+            
+    </style>
+  </head>
+
+  <body>
+    <div class="targeta">
+      <h2>Alejandro Duran</h2>
+      <p>Estudiante de diseño</p>
+      <a href="">Ver mi perfil</a>
+    </div>     
+  </body>
+</html>
