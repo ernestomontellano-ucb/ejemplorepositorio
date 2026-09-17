@@ -6,10 +6,30 @@
 }
 
 :root { /* Variables CSS  mas amplias*/
-    --color1:green;
-
+    --bg_header : #A4A1A1;
+    --strok: #E98484;
+    --primary: #EFB5B6;
+    --font_principal: "Arial", sans-serif;
+    --blanco: #ffff;
 }
-
-body {
-    background-color: var(--color1);
+.site-header {
+    background-color: var(--bg_header);
+    border-bottom: 3px solid var(--strok);
+    padding: 20px;
+}
+.site-header h1 {
+}
+.site-header .main-navegation {
+}
+.site-header .main-navegation .main-menu {
+}
+.site-header .main-navegation .main-menu .main-item {
+}
+.site-header .main-navegation .main-menu .main-item a {
+    background-color: var(--blanco);
+    padding: 20px 30px;
+    display: inline-block;
+}
+.site-header .main-navegation .main-menu .main-item a:hover {
+    background-color: var(--primary);
 }
