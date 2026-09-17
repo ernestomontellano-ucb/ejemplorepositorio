@@ -1,0 +1,198 @@
+/* Hace que el tamaño de los elementos sea más fácil de controlar */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Estilo general de toda la página */
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff8fb;
+    color: #4a3a40;
+}
+
+/*"Mi Perfil Personal" y el menú*/
+
+header {
+    background-color: #f9dce8;
+    text-align: center;
+    padding: 35px 20px 25px;
+    border-bottom: 3px solid #efb6cc;
+}
+
+/*<h1>Mi Perfil Personal</h1> */
+
+header h1 {
+    color: #a84d72;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+/*Presentación | Sobre mí | Gustos e intereses | Inspiración*/
+/* Quita los puntos de la lista del menú */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+/* Coloca las opciones del menú una al lado de otra */
+nav li {
+    display: inline;
+    margin: 0 12px;
+}
+
+/*enlaces del menú */
+nav a {
+    color: #a84d72;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+/* Cuando paso el mouse por encima de una opción,cambia su color */
+nav a:hover {
+    color: #d66b96;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/*Presentación, Sobre mí,Gustos e intereses e Inspiración*/
+section {
+    background-color: white;
+    margin: 45px 0;
+    padding: 45px;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px #d89ab51f;
+    border: 1px solid #f3d5e1;
+}
+
+/*<h2> de cada sección */
+section h2 {
+    color: #a84d72;
+    font-size: 34px;
+    margin-bottom: 25px;
+}
+
+/* <h3> mi fe , la danza*/
+section h3 {
+    color: #c45d86;
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+/* Estilo de los párrafos de las secciones */
+section p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/*<section id="presentacion">*/
+/* Centra todo el contenido de Presentación */
+#presentacion {
+    text-align: center;
+}
+
+/*la foto que tienes en:<section id="presentacion">*/
+#presentacion img {
+    border-radius: 25px;
+    border: 6px solid #f9dce8;
+    margin: 15px 0;
+}
+
+/* Hace que la frase que está dentro de <em>
+   tenga color rosado */
+#presentacion em {
+    color: #a84d72;
+}
+
+/* BOTÓN DE GITHUB*/
+#presentacion a {
+    display: inline-block;
+    background-color: #d66b96;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Cuando paso el mouse sobre el botón de GitHub,cambia a un rosado más oscuro */
+#presentacion a:hover {
+    background-color: #a84d72;
+}
+
+/*<section id="sobre-mi">*/
+/* Cambia el fondo de la sección Sobre mí */
+
+#sobre-mi {
+    background-color: #fff0f5;
+}
+
+/*<section id="intereses"> */
+/* Quita los puntos de la lista */
+
+#intereses ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+/*Danza, Repostería, Familia y amigos,Manualidades */
+#intereses li {
+    background-color: #fff0f5;
+    margin: 12px 0;
+    padding: 15px 20px;
+    border-radius: 15px;
+    border-left: 5px solid #d66b96;
+    font-size: 18px;
+}
+
+/*<section id="inspiracion">*/
+#inspiracion {
+    background-color: white;
+}
+
+/*<img src="Imagenes/bachata.jpg">*/
+
+#inspiracion img {
+    display: block;
+    max-width: 100%;
+    width: 400px;
+    border-radius: 25px;
+    margin: 20px auto;
+    border: 6px solid #f9dce8;
+    box-shadow: 0 8px 20px #d89ab52b;
+}
+
+/* <h3>Mi vida cristiana</h3>
+   <h3>La danza</h3>*/
+#inspiracion h3 {
+    background-color: #fce5ee;
+    padding: 12px 18px;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+/*"Taller de Diseño Digital 1 — 2026"*/
+footer {
+    background-color: #f9dce8;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+    color: #8f4965;
+}
+
+/* Quita espacios innecesarios del texto del footer */
+footer p {
+    margin: 0;
+}
+

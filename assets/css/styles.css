@@ -1,0 +1,15 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root { /* Variables CSS  mas amplias*/
+    --color1:green;
+
+}
+
+body {
+    background-color: var(--color1);
+}
