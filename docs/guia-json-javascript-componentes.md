@@ -431,8 +431,8 @@ Los cambios principales son:
 
 - Título de cabecera de aproximadamente 18–20 px y títulos de página de 26–32 px.
 - Títulos de sección de aproximadamente 22–25 px y cards de 16–18 px según su contexto.
-- Texto de lectura con interlineado mayor y una tipografía de sistema.
-- Fondos claros, bordes suaves y uso moderado de azul para estados y enlaces.
+- Texto de lectura con interlineado mayor y la tipografía original Montserrat Alternates.
+- Paleta original viva: azul `#3d8eff`, amarillo `#fed257` y celeste `#94c1ff`, combinada con superficies blancas y bordes suaves. El azul identifica las cabeceras y el pie; el amarillo destaca acciones y selecciones.
 - Eliminación de alturas mínimas excesivas y grandes bloques vacíos.
 - Cuadrículas que se adaptan al ancho y controles que se apilan en móvil.
 - Menú de escritorio visible a partir de 901 px; menú compacto por debajo.
