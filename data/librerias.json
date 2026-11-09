@@ -1,0 +1,116 @@
+{
+  "secciones": [
+    {
+      "titulo": "CSS, componentes e iconos",
+      "descripcion": "",
+      "recursos": [
+        {
+          "id": "bootstrap",
+          "titulo": "Bootstrap",
+          "etiqueta": "CSS y componentes",
+          "descripcion": "Framework con una cuadrícula responsive, estilos y componentes de interfaz. Algunos componentes interactivos utilizan su JavaScript.",
+          "fuente": "",
+          "temas": [
+            "CSS"
+          ],
+          "url": "https://getbootstrap.com/docs/5.3/getting-started/introduction/",
+          "textoEnlace": "Consultar Bootstrap"
+        },
+        {
+          "id": "bulma",
+          "titulo": "Bulma",
+          "etiqueta": "Framework CSS",
+          "descripcion": "Componentes y utilidades de diseño basados en CSS, con opciones para formularios, navegación y distribución responsive.",
+          "fuente": "",
+          "temas": [
+            "CSS"
+          ],
+          "url": "https://bulma.io/",
+          "textoEnlace": "Consultar Bulma"
+        },
+        {
+          "id": "animate-css",
+          "titulo": "Animate.css",
+          "etiqueta": "Animación CSS",
+          "descripcion": "Colección de animaciones listas para aplicar mediante clases: entradas, salidas y efectos de énfasis para elementos de una interfaz.",
+          "fuente": "",
+          "temas": [
+            "CSS",
+            "Animación"
+          ],
+          "url": "https://animate.style/",
+          "textoEnlace": "Consultar Animate.css"
+        },
+        {
+          "id": "iconoir",
+          "titulo": "Iconoir",
+          "etiqueta": "Iconos SVG",
+          "descripcion": "Biblioteca de iconos de trazo consistente, disponible en SVG y en integraciones para distintos entornos.",
+          "fuente": "",
+          "temas": [
+            "Iconos"
+          ],
+          "url": "https://iconoir.com/",
+          "textoEnlace": "Consultar Iconoir"
+        }
+      ]
+    },
+    {
+      "titulo": "JavaScript e interacción",
+      "descripcion": "",
+      "recursos": [
+        {
+          "id": "alpine-js",
+          "titulo": "Alpine.js",
+          "etiqueta": "Interacción · JavaScript",
+          "descripcion": "Un framework ligero para añadir estados, eventos y contenido desplegable mediante atributos en el HTML.",
+          "fuente": "",
+          "temas": [
+            "JavaScript"
+          ],
+          "url": "https://alpinejs.dev/",
+          "textoEnlace": "Consultar Alpine.js"
+        },
+        {
+          "id": "swiper",
+          "titulo": "Swiper",
+          "etiqueta": "Galerías · JavaScript",
+          "descripcion": "Herramienta para crear carruseles y galerías deslizables con opciones de navegación y paginación.",
+          "fuente": "",
+          "temas": [
+            "JavaScript",
+            "Galerías"
+          ],
+          "url": "https://swiperjs.com/get-started",
+          "textoEnlace": "Consultar Swiper"
+        },
+        {
+          "id": "chart-js",
+          "titulo": "Chart.js",
+          "etiqueta": "Datos · JavaScript",
+          "descripcion": "Biblioteca para representar datos mediante gráficos de barras, líneas y otros formatos en una página web.",
+          "fuente": "",
+          "temas": [
+            "JavaScript",
+            "Datos"
+          ],
+          "url": "https://www.chartjs.org/",
+          "textoEnlace": "Consultar Chart.js"
+        },
+        {
+          "id": "sweetalert2",
+          "titulo": "SweetAlert2",
+          "etiqueta": "Diálogos · JavaScript",
+          "descripcion": "Biblioteca para mostrar mensajes, confirmaciones y cuadros de diálogo personalizables en una interfaz.",
+          "fuente": "",
+          "temas": [
+            "JavaScript",
+            "Diálogos"
+          ],
+          "url": "https://sweetalert2.github.io/",
+          "textoEnlace": "Consultar SweetAlert2"
+        }
+      ]
+    }
+  ]
+}

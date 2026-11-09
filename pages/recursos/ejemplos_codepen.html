@@ -6,43 +6,17 @@
     <meta name="description" content="Ejemplos y demostraciones comentadas de CSS, Flexbox, Grid y JavaScript básico, con acceso al código y al resultado en CodePen.">
     <title>Ejemplos CodePen | Taller de Diseño Digital 1</title>
     <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/site.css">
+    <script src="../../assets/js/layout.js" defer></script>
     <script src="../../assets/js/main.js" defer></script>
+    <script src="../../assets/js/recursos.js" defer></script>
 </head>
 <body class="resource-page">
 <a class="skip-link" href="#contenido">Saltar al contenido</a>
 <div class="container">
-<header class="site-header">
-
-        <p class="site-title"><a href="../../index.html">Taller de Diseño Digital 1</a></p>
-     <!-- =====================================================C
-         MENÚ PRINCIPAL
-    ====================================================== -->
-    <button class="menu-toggle" type="button" aria-expanded="true" aria-controls="main-navigation" aria-label="Cerrar menú">
-        <img src="../../assets/images/iconoir_menu.svg" alt="" width="24" height="24">
-    </button>
-    <nav class="main-navigation" id="main-navigation" aria-label="Navegación principal">
-
-        <ul class="main-menu">
-            <li class="menu-item">
-                <a href="../../index.html#inicio">Inicio</a>
-            </li>
-
-           <li class="menu-item">
-                <a href="../../index.html#estudiantes">Estudiantes</a>
-            </li>
-
-            <li class="menu-item">
-                <a href="../../index.html#proyecto">Proyectos</a>
-            </li>
-
-            <li class="menu-item">
-                <a href="recursos.html" aria-current="location">Recursos</a>
-            </li>
-        </ul>
-
-    </nav>
-
-    </header>
+<header class="site-header" data-component="header" data-section="recursos">
+    <a class="site-title" href="../../index.html">Taller de Diseño Digital 1</a>
+</header>
 <main class="resource-main" id="contenido">
     <div class="resource-shell">
         <nav class="breadcrumbs" aria-label="Ruta de navegación">
@@ -54,99 +28,15 @@
         </nav>
         <header class="resource-hero"><p class="eyebrow">Taller de Diseño Digital 1 · Recursos</p><h1>Ejemplos CodePen</h1><p>Ejemplos y demostraciones comentadas de CSS, Flexbox, Grid y JavaScript básico, con acceso al código y al resultado en CodePen.</p></header>
         <nav class="resource-navigation" aria-label="Secciones de recursos"><ul><li><a href="recursos.html">Todos los recursos</a></li><li><a href="ejemplos_codepen.html" aria-current="page">Ejemplos CodePen</a></li><li><a href="tutoriales.html">Tutoriales</a></li><li><a href="librerias.html">Librerías</a></li><li><a href="vinculos_interes.html">Vínculos de interés</a></li></ul></nav>
-<section class="resource-section">
-<h2>Ejemplos para consultar</h2>
-<p>Una selección de recursos externos para entender soluciones habituales de diseño e interacción. Cada tarjeta indica el tema y la autoría del ejemplo.</p>
-<div class="resource-grid">
-<article class="resource-card">
-    <p class="eyebrow">CSS · Transiciones</p>
-    <h3>Sombras y cambios de estado</h3>
-    <p>Una demostración de transiciones de sombras para dar respuesta visual a los cambios de estado de un elemento.</p>
-    <p class="source-note">Autor: web.dev</p>
-    <a class="text-link" href="https://codepen.io/web-dot-dev/pen/gORgPQx">Ver transiciones en CodePen</a>
-</article>
-<article class="resource-card">
-    <p class="eyebrow">Flexbox · Distribución</p>
-    <h3>Contenido principal y barra lateral</h3>
-    <p>Ejemplo de una composición flexible que combina dos áreas de contenido y adapta su distribución al espacio disponible.</p>
-    <p class="source-note">Autor: web.dev</p>
-    <a class="text-link" href="https://codepen.io/web-dot-dev/pen/poRENWv">Ver Flexbox en CodePen</a>
-</article>
-<article class="resource-card">
-    <p class="eyebrow">Grid · Responsive</p>
-    <h3>Columnas adaptables con minmax</h3>
-    <p>Una cuadrícula que combina repetición automática y tamaños flexibles para distribuir tarjetas según el ancho del contenedor.</p>
-    <p class="source-note">Autor: web.dev</p>
-    <a class="text-link" href="https://codepen.io/web-dot-dev/pen/OJWbRax">Ver columnas en CodePen</a>
-</article>
-<article class="resource-card">
-    <p class="eyebrow">Grid · Alineación</p>
-    <h3>La diferencia entre auto-fill y auto-fit</h3>
-    <p>Demostración del espacio reservado para columnas vacías y de cómo se expanden los elementos cuando hay pocas tarjetas.</p>
-    <p class="source-note">Autor: web.dev</p>
-    <a class="text-link" href="https://codepen.io/web-dot-dev/pen/MWJbbNe">Ver comparación en CodePen</a>
-</article>
-<article class="resource-card">
-    <p class="eyebrow">JavaScript · Eventos</p>
-    <h3>Un clic que cambia una clase</h3>
-    <p>Un botón, un evento click y classList.toggle: una introducción breve a la conexión entre JavaScript y los estados visuales definidos en CSS.</p>
-    <p class="source-note">Autor: Tuts+</p>
-    <a class="text-link" href="https://codepen.io/tutsplus/pen/bGpLYbY">Ver evento en CodePen</a>
-</article>
-<article class="resource-card">
-    <p class="eyebrow">JavaScript · DOM</p>
-    <h3>Introducción a la interacción con elementos</h3>
-    <p>Ejemplos comentados de selección de elementos, eventos y cambios de clases o atributos. Incluye una comparación entre JavaScript nativo y jQuery.</p>
-    <p class="source-note">Autor: kccnma</p>
-    <a class="text-link" href="https://codepen.io/kccnma/pen/MEOdNg">Ver introducción en CodePen</a>
-</article>
+<div data-recursos-json="data/ejemplos_codepen.json">
+    <!-- Las secciones y cards se generan desde el JSON. -->
 </div>
-</section>
+<noscript>Activa JavaScript para consultar los recursos de esta página.</noscript>
 
         <div class="resource-back"><a class="text-link" href="../../index.html">Volver al inicio del taller</a></div>
     </div>
 </main>
-<footer class="site-footer">
-
-        <div class="footer-content">
-
-            <section class="footer-info">
-                <h2>Taller de Diseño Digital 1</h2>
-                <p>
-                    Universidad Católica Boliviana San Pablo
-                </p>
-            </section>
-
-            <section class="footer-contact">
-                <h3>Contacto</h3>
-                <p>
-                    Departamento de Diseño
-                </p>
-                <p>
-                    La Paz, Bolivia
-                </p>
-            </section>
-
-            <section class="footer-links">
-                <h3>Enlaces</h3>
-
-                <ul>
-                    <li>
-                        <a href="https://github.com/ernestomontellano-ucb">GitHub del profe</a>
-                    </li>
-
-                </ul>
-            </section>
-
-        </div>
-
-        <div class="footer-bottom">
-            <p>
-                &copy; 2026 Taller de Diseño Digital 1. Todos los derechos reservados.
-            </p>
-        </div>
-
-    </footer>
+<footer class="site-footer" data-component="footer"></footer>
 </div>
 </body>
 </html>

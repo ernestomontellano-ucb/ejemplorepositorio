@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos | Taller de Diseño Digital 1</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <script src="../../assets/js/main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <a class="site-title" href="../../index.html">Taller de Diseño Digital 1</a>
+            <button class="menu-toggle" type="button" aria-expanded="true"
+                    aria-controls="main-navigation" aria-label="Cerrar menú">
+                <img src="../../assets/images/iconoir_menu.svg" alt="" width="24" height="24">
+            </button>
+            <nav class="main-navigation" id="main-navigation" aria-label="Navegación principal">
+                <ul class="main-menu">
+                    <li><a href="../../index.html">Inicio</a></li>
+                    <li><a href="../../index.html#estudiantes">Estudiantes</a></li>
+                    <li><a href="proyectos.html" aria-current="page">Proyectos</a></li>
+                    <li><a href="../recursos/recursos.html">Recursos</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main-content">
+            <section class="projects-section" aria-labelledby="titulo-proyectos">
+                <header class="section-header">
+                    <h1 id="titulo-proyectos">Proyectos del semestre</h1>
+                    <p>Explora las subculturas investigadas por los estudiantes.</p>
+                </header>
+                <p id="estado-proyectos" role="status">Cargando proyectos…</p>
+                <div class="projects-grid">
+                    <!-- main.js crea las cards a partir de data/estudiantes.json. -->
+                </div>
+                <noscript>Activa JavaScript para ver la lista de proyectos.</noscript>
+            </section>
+        </main>
+        <footer class="site-footer">
+            <div class="footer-bottom">
+                <p>Taller de Diseño Digital 1 · Universidad Católica Boliviana San Pablo</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

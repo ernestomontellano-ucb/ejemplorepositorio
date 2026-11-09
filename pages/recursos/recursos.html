@@ -6,43 +6,17 @@
     <meta name="description" content="Un catálogo de ejemplos, videos, bibliotecas y documentación para acompañar el aprendizaje de diseño y desarrollo web en Taller de Diseño Digital 1.">
     <title>Recursos para diseñar y construir | Taller de Diseño Digital 1</title>
     <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/site.css">
+    <script src="../../assets/js/layout.js" defer></script>
     <script src="../../assets/js/main.js" defer></script>
+    <script src="../../assets/js/recursos.js" defer></script>
 </head>
 <body class="resource-page">
 <a class="skip-link" href="#contenido">Saltar al contenido</a>
 <div class="container">
-<header class="site-header">
-
-        <p class="site-title"><a href="../../index.html">Taller de Diseño Digital 1</a></p>
-     <!-- =====================================================C
-         MENÚ PRINCIPAL
-    ====================================================== -->
-    <button class="menu-toggle" type="button" aria-expanded="true" aria-controls="main-navigation" aria-label="Cerrar menú">
-        <img src="../../assets/images/iconoir_menu.svg" alt="" width="24" height="24">
-    </button>
-    <nav class="main-navigation" id="main-navigation" aria-label="Navegación principal">
-
-        <ul class="main-menu">
-            <li class="menu-item">
-                <a href="../../index.html#inicio">Inicio</a>
-            </li>
-
-           <li class="menu-item">
-                <a href="../../index.html#estudiantes">Estudiantes</a>
-            </li>
-
-            <li class="menu-item">
-                <a href="../../index.html#proyecto">Proyectos</a>
-            </li>
-
-            <li class="menu-item">
-                <a href="recursos.html" aria-current="location">Recursos</a>
-            </li>
-        </ul>
-
-    </nav>
-
-    </header>
+<header class="site-header" data-component="header" data-section="recursos">
+    <a class="site-title" href="../../index.html">Taller de Diseño Digital 1</a>
+</header>
 <main class="resource-main" id="contenido">
     <div class="resource-shell">
         <nav class="breadcrumbs" aria-label="Ruta de navegación">
@@ -56,25 +30,25 @@
 <section class="resource-section">
 <h2>Recursos por categoría</h2>
 <div class="resource-grid">
-<article class="resource-card">
+<article class="resource-card" data-temas="Código">
     <p class="eyebrow">01 · Código</p>
     <h3>Ejemplos CodePen</h3>
     <p>Demostraciones de transiciones, Flexbox, Grid y eventos básicos de JavaScript, con código y resultado visible.</p>
     <a class="text-link" href="ejemplos_codepen.html">Explorar ejemplos</a>
 </article>
-<article class="resource-card">
+<article class="resource-card" data-temas="Videos">
     <p class="eyebrow">02 · Videos</p>
     <h3>Tutoriales</h3>
     <p>Cursos y tutoriales externos de YouTube en español sobre HTML, CSS y JavaScript.</p>
     <a class="text-link" href="tutoriales.html">Ver los tutoriales</a>
 </article>
-<article class="resource-card">
+<article class="resource-card" data-temas="Herramientas">
     <p class="eyebrow">03 · Herramientas</p>
     <h3>Librerías</h3>
     <p>Bibliotecas y frameworks para componentes, estilos, animaciones e interacciones habituales en la web.</p>
     <a class="text-link" href="librerias.html">Consultar librerías</a>
 </article>
-<article class="resource-card">
+<article class="resource-card" data-temas="Referencias">
     <p class="eyebrow">04 · Referencias</p>
     <h3>Vínculos de interés</h3>
     <p>Documentación, accesibilidad y archivos de referencia del taller reunidos en un solo lugar.</p>
@@ -86,47 +60,7 @@
         <div class="resource-back"><a class="text-link" href="../../index.html">Volver al inicio del taller</a></div>
     </div>
 </main>
-<footer class="site-footer">
-
-        <div class="footer-content">
-
-            <section class="footer-info">
-                <h2>Taller de Diseño Digital 1</h2>
-                <p>
-                    Universidad Católica Boliviana San Pablo
-                </p>
-            </section>
-
-            <section class="footer-contact">
-                <h3>Contacto</h3>
-                <p>
-                    Departamento de Diseño
-                </p>
-                <p>
-                    La Paz, Bolivia
-                </p>
-            </section>
-
-            <section class="footer-links">
-                <h3>Enlaces</h3>
-
-                <ul>
-                    <li>
-                        <a href="https://github.com/ernestomontellano-ucb">GitHub del profe</a>
-                    </li>
-
-                </ul>
-            </section>
-
-        </div>
-
-        <div class="footer-bottom">
-            <p>
-                &copy; 2026 Taller de Diseño Digital 1. Todos los derechos reservados.
-            </p>
-        </div>
-
-    </footer>
+<footer class="site-footer" data-component="footer"></footer>
 </div>
 </body>
 </html>

@@ -6,47 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taller de Diseño Digital 1</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/site.css">
+    <script src="assets/js/layout.js" defer></script>
     <script src="assets/js/main.js" defer></script>
 </head>
 
 <body>
+<a class="skip-link" href="#inicio">Saltar al contenido</a>
 
 <div class="container"> 
     <!-- =====================================================
          CABECERA
     ====================================================== -->
-    <header class="site-header">
-
-        <h1>Taller de Diseño Digital 1</h1>
-     <!-- =====================================================C
-         MENÚ PRINCIPAL
-    ====================================================== -->
-    <button class="menu-toggle" type="button" aria-expanded="true" aria-controls="main-navigation" aria-label="Cerrar menú">
-        <img src="assets/images/iconoir_menu.svg" alt="" width="24" height="24">
-    </button>
-    <nav class="main-navigation" id="main-navigation" aria-label="Navegación principal">
-
-        <ul class="main-menu">
-            <li class="menu-item">
-                <a href="#inicio">Inicio</a>
-            </li>
-
-           <li class="menu-item">
-                <a href="#estudiantes">Estudiantes</a>
-            </li>
-
-            <li class="menu-item">
-                <a href="#proyecto">Proyectos</a>
-            </li>
-
-            <li class="menu-item">
-                <a href="pages/recursos/recursos.html">Recursos</a>
-            </li>
-        </ul>
-
-    </nav>   
-
-    </header>
+    <header class="site-header" data-component="header" data-section="inicio">
+    <a class="site-title" href="index.html">Taller de Diseño Digital 1</a>
+</header>
     <!-- =====================================================
          CONTENIDO PRINCIPAL
     ====================================================== -->
@@ -103,183 +77,7 @@
 
 
             <div class="students-grid">
-
-                <!-- Estudiante -->
-                <article class="student-card">
-                    <a href="pages/estudiantes/gael-aguilar/" class="student-link">
-                        <h3>Gael Aguilar</h3>
-                    </a>
-                </article>
-
-                <!-- Estudiante -->
-                <article class="student-card">
-                    <a href="pages/estudiantes/nicole-alvarez/" class="student-link">
-                        <h3>Nicole Alvarez</h3>
-                    </a>
-                </article>
-
-                <!-- Estudiante -->
-                <article class="student-card">
-                    <a href="pages/estudiantes/alejandra-arguedas/" class="student-link">
-                        <h3>Alejandra Arguedas</h3>
-                    </a>
-                </article>
-
-                <!-- Estudiante -->
-                <article class="student-card">
-                    <a href="pages/estudiantes/jhoan-azuga/" class="student-link">
-                        <h3>Jhoan Azuga</h3>
-                    </a>
-                </article>
-
-                <!-- Estudiante -->
-                <article class="student-card">
-                    <a href="pages/estudiantes/lizet-blatnik/" class="student-link">
-                        <h3>Lizet Blatnik</h3>
-                    </a>
-                </article>
-
-                <!-- Estudiante -->
-                <article class="student-card">
-                    <a href="pages/estudiantes/diana-callejas/" class="student-link">
-                        <h3>Diana Callejas</h3>
-                    </a>
-                </article>
-
-                <!-- Estudiante -->
-                <article class="student-card">
-                    <a href="pages/estudiantes/helen-chambi/" class="student-link">
-                        <h3>Helen Chambi</h3>
-                    </a>
-                </article>
-
-                <!-- Estudiante -->
-                <article class="student-card">
-                    <a href="pages/estudiantes/ana-condarco/" class="student-link">
-                        <h3>Ana Condarco</h3>
-                    </a>
-                </article>
-
-                <!-- Estudiante -->
-                <article class="student-card">
-                    <a href="pages/estudiantes/adrian-duran/" class="student-link">
-                        <h3>Adrian Duran</h3>
-                    </a>
-                </article>
-
-                <!-- Estudiante -->
-                <article class="student-card">
-                    <a href="pages/estudiantes/adriana-fernandez/" class="student-link">
-                        <h3>Adriana Fernandez</h3>
-                    </a>
-                </article>
-
-                <!-- Estudiante -->
-                <article class="student-card">
-                    <a href="pages/estudiantes/emilce-flores/" class="student-link">
-                        <h3>Emilce Flores</h3>
-                    </a>
-                </article>
-
-                <!-- Estudiante -->
-                <article class="student-card">
-                    <a href="pages/estudiantes/angel-garitano/" class="student-link">
-                        <h3>Angel Garitano</h3>
-                    </a>
-                </article>
-
-                <!-- Estudiante -->
-                <article class="student-card">
-                    <a href="pages/estudiantes/ignacio-gironas/" class="student-link">
-                        <h3>Ignacio Gironas</h3>
-                    </a>
-                </article>
-
-                <!-- Estudiante -->
-                <article class="student-card">
-                    <a href="pages/estudiantes/eduardo-gomez/" class="student-link">
-                        <h3>Eduardo Gomez</h3>
-                    </a>
-                </article>
-
-                <!-- Estudiante -->
-                <article class="student-card">
-                    <a href="pages/estudiantes/kevin-guisbert/" class="student-link">
-                        <h3>Kevin Guisbert</h3>
-                    </a>
-                </article>
-
-                <!-- Estudiante -->
-                <article class="student-card">
-                    <a href="pages/estudiantes/ariana-guzman/" class="student-link">
-                        <h3>Ariana Guzman</h3>
-                    </a>
-                </article>
-
-                <!-- Estudiante -->
-                <article class="student-card">
-                    <a href="pages/estudiantes/nicole-hernandez/" class="student-link">
-                        <h3>Nicole Hernandez</h3>
-                    </a>
-                </article>
-
-                <!-- Estudiante -->
-                <article class="student-card">
-                    <a href="pages/estudiantes/alejandro-lima/" class="student-link">
-                        <h3>Alejandro Lima</h3>
-                    </a>
-                </article>
-
-                <!-- Estudiante -->
-                <article class="student-card">
-                    <a href="pages/estudiantes/claudia-morales/" class="student-link">
-                        <h3>Claudia Morales</h3>
-                    </a>
-                </article>
-
-                <!-- Estudiante -->
-                <article class="student-card">
-                    <a href="pages/estudiantes/joshua-ona/" class="student-link">
-                        <h3>Joshua Oña</h3>
-                    </a>
-                </article>
-
-                <!-- Estudiante -->
-                <article class="student-card">
-                    <a href="pages/estudiantes/maura-reynolds/" class="student-link">
-                        <h3>Maura Reynolds</h3>
-                    </a>
-                </article>
-
-                <!-- Estudiante -->
-                <article class="student-card">
-                    <a href="pages/estudiantes/santiago-rojas/" class="student-link">
-                        <h3>Santiago Rojas</h3>
-                    </a>
-                </article>
-
-                <!-- Estudiante -->
-                <article class="student-card">
-                    <a href="pages/estudiantes/jhoan-sirpa/" class="student-link">
-                        <h3>Jhoan Sirpa</h3>
-                    </a>
-                </article>
-
-
-                <!-- Estudiante -->
-                <article class="student-card">
-                    <a href="pages/estudiantes/carla-saenz/" class="student-link">
-                        <h3>Carla Saenz</h3>
-                    </a>
-                </article>
-
-                <!-- Estudiante -->
-                <article class="student-card">
-                    <a href="pages/estudiantes/gabriela-yugar/" class="student-link">
-                        <h3>Gabriela Yugar</h3>
-                    </a>
-                </article>
-
+                <!-- JavaScript genera las cards con data/estudiantes.json. -->
             </div>
 
         </section>
@@ -291,7 +89,7 @@
         <section class="course-info" id="proyecto">
 
             <header class="section-header">
-                <h2>Proyecto del semestre</h2>
+                <h2>Proyectos del semestre</h2>
             </header>
 
             <p>
@@ -300,7 +98,7 @@
                 prototipado y desarrollo frontend.
             </p>
 
-            <a class="project-button" href="pages/proyecto/">Ver proyecto</a>
+            <a class="project-button" href="pages/proyecto/proyectos.html">Ver todos los proyectos</a>
 
         </section>
 
@@ -361,47 +159,7 @@
     <!-- =====================================================
          PIE DE PÁGINA
     ====================================================== -->
-    <footer class="site-footer">
-
-        <div class="footer-content">
-
-            <section class="footer-info">
-                <h2>Taller de Diseño Digital 1</h2>
-                <p>
-                    Universidad Católica Boliviana San Pablo
-                </p>
-            </section>
-
-            <section class="footer-contact">
-                <h3>Contacto</h3>
-                <p>
-                    Departamento de Diseño
-                </p>
-                <p>
-                    La Paz, Bolivia
-                </p>
-            </section>
-
-            <section class="footer-links">
-                <h3>Enlaces</h3>
-
-                <ul>
-                    <li>
-                        <a href="https://github.com/ernestomontellano-ucb">GitHub del profe</a>
-                    </li>
-
-                </ul>
-            </section>
-
-        </div>
-
-        <div class="footer-bottom">
-            <p>
-                &copy; 2026 Taller de Diseño Digital 1. Todos los derechos reservados.
-            </p>
-        </div>
-
-    </footer>
+    <footer class="site-footer" data-component="footer"></footer>
 
 </div>
 

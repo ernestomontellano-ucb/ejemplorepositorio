@@ -1,0 +1,85 @@
+{
+  "secciones": [
+    {
+      "titulo": "Ejemplos para consultar",
+      "descripcion": "Una selección de recursos externos para entender soluciones habituales de diseño e interacción. Cada tarjeta indica el tema y la autoría del ejemplo.",
+      "recursos": [
+        {
+          "id": "sombras-y-cambios-de-estado",
+          "titulo": "Sombras y cambios de estado",
+          "etiqueta": "CSS · Transiciones",
+          "descripcion": "Una demostración de transiciones de sombras para dar respuesta visual a los cambios de estado de un elemento.",
+          "fuente": "Autor: web.dev",
+          "temas": [
+            "CSS"
+          ],
+          "url": "https://codepen.io/web-dot-dev/pen/gORgPQx",
+          "textoEnlace": "Ver transiciones en CodePen"
+        },
+        {
+          "id": "contenido-principal-y-barra-lateral",
+          "titulo": "Contenido principal y barra lateral",
+          "etiqueta": "Flexbox · Distribución",
+          "descripcion": "Ejemplo de una composición flexible que combina dos áreas de contenido y adapta su distribución al espacio disponible.",
+          "fuente": "Autor: web.dev",
+          "temas": [
+            "CSS",
+            "Flexbox"
+          ],
+          "url": "https://codepen.io/web-dot-dev/pen/poRENWv",
+          "textoEnlace": "Ver Flexbox en CodePen"
+        },
+        {
+          "id": "columnas-adaptables-con-minmax",
+          "titulo": "Columnas adaptables con minmax",
+          "etiqueta": "Grid · Responsive",
+          "descripcion": "Una cuadrícula que combina repetición automática y tamaños flexibles para distribuir tarjetas según el ancho del contenedor.",
+          "fuente": "Autor: web.dev",
+          "temas": [
+            "CSS",
+            "Grid"
+          ],
+          "url": "https://codepen.io/web-dot-dev/pen/OJWbRax",
+          "textoEnlace": "Ver columnas en CodePen"
+        },
+        {
+          "id": "la-diferencia-entre-auto-fill-y-auto-fit",
+          "titulo": "La diferencia entre auto-fill y auto-fit",
+          "etiqueta": "Grid · Alineación",
+          "descripcion": "Demostración del espacio reservado para columnas vacías y de cómo se expanden los elementos cuando hay pocas tarjetas.",
+          "fuente": "Autor: web.dev",
+          "temas": [
+            "CSS",
+            "Grid"
+          ],
+          "url": "https://codepen.io/web-dot-dev/pen/MWJbbNe",
+          "textoEnlace": "Ver comparación en CodePen"
+        },
+        {
+          "id": "un-clic-que-cambia-una-clase",
+          "titulo": "Un clic que cambia una clase",
+          "etiqueta": "JavaScript · Eventos",
+          "descripcion": "Un botón, un evento click y classList.toggle: una introducción breve a la conexión entre JavaScript y los estados visuales definidos en CSS.",
+          "fuente": "Autor: Tuts+",
+          "temas": [
+            "JavaScript"
+          ],
+          "url": "https://codepen.io/tutsplus/pen/bGpLYbY",
+          "textoEnlace": "Ver evento en CodePen"
+        },
+        {
+          "id": "introduccion-a-la-interaccion-con-elementos",
+          "titulo": "Introducción a la interacción con elementos",
+          "etiqueta": "JavaScript · DOM",
+          "descripcion": "Ejemplos comentados de selección de elementos, eventos y cambios de clases o atributos. Incluye una comparación entre JavaScript nativo y jQuery.",
+          "fuente": "Autor: kccnma",
+          "temas": [
+            "JavaScript"
+          ],
+          "url": "https://codepen.io/kccnma/pen/MEOdNg",
+          "textoEnlace": "Ver introducción en CodePen"
+        }
+      ]
+    }
+  ]
+}

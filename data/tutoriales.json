@@ -1,0 +1,49 @@
+{
+  "secciones": [
+    {
+      "titulo": "Tutoriales en YouTube",
+      "descripcion": "Cada enlace lleva directamente al video del creador. Los cursos se pueden consultar por tema y según los conocimientos previos.",
+      "recursos": [
+        {
+          "id": "html-y-css-desde-cero",
+          "titulo": "HTML y CSS desde cero",
+          "etiqueta": "HTML y CSS · Español",
+          "descripcion": "Introducción a la estructura de una página, etiquetas HTML, selectores, tipografía, colores y espaciado. Un punto de partida para comprender cómo se construye una interfaz web.",
+          "fuente": "Canal: freeCodeCamp Español · Estefanía Cassingena Navone",
+          "temas": [
+            "HTML",
+            "CSS"
+          ],
+          "url": "https://www.youtube.com/watch?v=XqFR2lqBYPs",
+          "textoEnlace": "Ver HTML y CSS en YouTube"
+        },
+        {
+          "id": "curso-completo-de-css",
+          "titulo": "Curso completo de CSS",
+          "etiqueta": "CSS, Flexbox y Grid · Español",
+          "descripcion": "Recorrido por los fundamentos de CSS y la composición de interfaces, con capítulos dedicados a Flexbox y Grid.",
+          "fuente": "Canal: midudev",
+          "temas": [
+            "CSS",
+            "Flexbox",
+            "Grid"
+          ],
+          "url": "https://www.youtube.com/watch?v=TlJbu0BMLaY",
+          "textoEnlace": "Ver el curso de CSS en YouTube"
+        },
+        {
+          "id": "javascript-desde-cero",
+          "titulo": "JavaScript desde cero",
+          "etiqueta": "JavaScript · Español",
+          "descripcion": "Un curso de iniciación a la programación con JavaScript, explicado paso a paso y acompañado de ejemplos.",
+          "fuente": "Canal: freeCodeCamp Español",
+          "temas": [
+            "JavaScript"
+          ],
+          "url": "https://www.youtube.com/watch?v=ivdTnPl1ND0",
+          "textoEnlace": "Ver JavaScript en YouTube"
+        }
+      ]
+    }
+  ]
+}

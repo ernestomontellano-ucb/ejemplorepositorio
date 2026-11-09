@@ -6,43 +6,17 @@
     <meta name="description" content="Una selección de bibliotecas y frameworks básicos de CSS y JavaScript para estilos, componentes, animaciones, galerías y visualización de datos.">
     <title>Librerías | Taller de Diseño Digital 1</title>
     <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/site.css">
+    <script src="../../assets/js/layout.js" defer></script>
     <script src="../../assets/js/main.js" defer></script>
+    <script src="../../assets/js/recursos.js" defer></script>
 </head>
 <body class="resource-page">
 <a class="skip-link" href="#contenido">Saltar al contenido</a>
 <div class="container">
-<header class="site-header">
-
-        <p class="site-title"><a href="../../index.html">Taller de Diseño Digital 1</a></p>
-     <!-- =====================================================C
-         MENÚ PRINCIPAL
-    ====================================================== -->
-    <button class="menu-toggle" type="button" aria-expanded="true" aria-controls="main-navigation" aria-label="Cerrar menú">
-        <img src="../../assets/images/iconoir_menu.svg" alt="" width="24" height="24">
-    </button>
-    <nav class="main-navigation" id="main-navigation" aria-label="Navegación principal">
-
-        <ul class="main-menu">
-            <li class="menu-item">
-                <a href="../../index.html#inicio">Inicio</a>
-            </li>
-
-           <li class="menu-item">
-                <a href="../../index.html#estudiantes">Estudiantes</a>
-            </li>
-
-            <li class="menu-item">
-                <a href="../../index.html#proyecto">Proyectos</a>
-            </li>
-
-            <li class="menu-item">
-                <a href="recursos.html" aria-current="location">Recursos</a>
-            </li>
-        </ul>
-
-    </nav>
-
-    </header>
+<header class="site-header" data-component="header" data-section="recursos">
+    <a class="site-title" href="../../index.html">Taller de Diseño Digital 1</a>
+</header>
 <main class="resource-main" id="contenido">
     <div class="resource-shell">
         <nav class="breadcrumbs" aria-label="Ruta de navegación">
@@ -54,109 +28,16 @@
         </nav>
         <header class="resource-hero"><p class="eyebrow">Taller de Diseño Digital 1 · Recursos</p><h1>Librerías</h1><p>Una selección de bibliotecas y frameworks básicos de CSS y JavaScript para estilos, componentes, animaciones, galerías y visualización de datos.</p></header>
         <nav class="resource-navigation" aria-label="Secciones de recursos"><ul><li><a href="recursos.html">Todos los recursos</a></li><li><a href="ejemplos_codepen.html">Ejemplos CodePen</a></li><li><a href="tutoriales.html">Tutoriales</a></li><li><a href="librerias.html" aria-current="page">Librerías</a></li><li><a href="vinculos_interes.html">Vínculos de interés</a></li></ul></nav>
-<section class="resource-section">
-<h2>CSS, componentes e iconos</h2>
-<div class="resource-grid">
-<article class="resource-card">
-    <p class="eyebrow">CSS y componentes</p>
-    <h3>Bootstrap</h3>
-    <p>Framework con una cuadrícula responsive, estilos y componentes de interfaz. Algunos componentes interactivos utilizan su JavaScript.</p>
-    <a class="text-link" href="https://getbootstrap.com/docs/5.3/getting-started/introduction/">Consultar Bootstrap</a>
-</article>
-<article class="resource-card">
-    <p class="eyebrow">Framework CSS</p>
-    <h3>Bulma</h3>
-    <p>Componentes y utilidades de diseño basados en CSS, con opciones para formularios, navegación y distribución responsive.</p>
-    <a class="text-link" href="https://bulma.io/">Consultar Bulma</a>
-</article>
-<article class="resource-card">
-    <p class="eyebrow">Animación CSS</p>
-    <h3>Animate.css</h3>
-    <p>Colección de animaciones listas para aplicar mediante clases: entradas, salidas y efectos de énfasis para elementos de una interfaz.</p>
-    <a class="text-link" href="https://animate.style/">Consultar Animate.css</a>
-</article>
-<article class="resource-card">
-    <p class="eyebrow">Iconos SVG</p>
-    <h3>Iconoir</h3>
-    <p>Biblioteca de iconos de trazo consistente, disponible en SVG y en integraciones para distintos entornos.</p>
-    <a class="text-link" href="https://iconoir.com/">Consultar Iconoir</a>
-</article>
+<div data-recursos-json="data/librerias.json">
+    <!-- Las secciones y cards se generan desde el JSON. -->
 </div>
-</section>
-<section class="resource-section">
-<h2>JavaScript e interacción</h2>
-<div class="resource-grid">
-<article class="resource-card">
-    <p class="eyebrow">Interacción · JavaScript</p>
-    <h3>Alpine.js</h3>
-    <p>Un framework ligero para añadir estados, eventos y contenido desplegable mediante atributos en el HTML.</p>
-    <a class="text-link" href="https://alpinejs.dev/">Consultar Alpine.js</a>
-</article>
-<article class="resource-card">
-    <p class="eyebrow">Galerías · JavaScript</p>
-    <h3>Swiper</h3>
-    <p>Herramienta para crear carruseles y galerías deslizables con opciones de navegación y paginación.</p>
-    <a class="text-link" href="https://swiperjs.com/get-started">Consultar Swiper</a>
-</article>
-<article class="resource-card">
-    <p class="eyebrow">Datos · JavaScript</p>
-    <h3>Chart.js</h3>
-    <p>Biblioteca para representar datos mediante gráficos de barras, líneas y otros formatos en una página web.</p>
-    <a class="text-link" href="https://www.chartjs.org/">Consultar Chart.js</a>
-</article>
-<article class="resource-card">
-    <p class="eyebrow">Diálogos · JavaScript</p>
-    <h3>SweetAlert2</h3>
-    <p>Biblioteca para mostrar mensajes, confirmaciones y cuadros de diálogo personalizables en una interfaz.</p>
-    <a class="text-link" href="https://sweetalert2.github.io/">Consultar SweetAlert2</a>
-</article>
-</div>
-</section>
+<noscript>Activa JavaScript para consultar los recursos de esta página.</noscript>
+
 
         <div class="resource-back"><a class="text-link" href="../../index.html">Volver al inicio del taller</a></div>
     </div>
 </main>
-<footer class="site-footer">
-
-        <div class="footer-content">
-
-            <section class="footer-info">
-                <h2>Taller de Diseño Digital 1</h2>
-                <p>
-                    Universidad Católica Boliviana San Pablo
-                </p>
-            </section>
-
-            <section class="footer-contact">
-                <h3>Contacto</h3>
-                <p>
-                    Departamento de Diseño
-                </p>
-                <p>
-                    La Paz, Bolivia
-                </p>
-            </section>
-
-            <section class="footer-links">
-                <h3>Enlaces</h3>
-
-                <ul>
-                    <li>
-                        <a href="https://github.com/ernestomontellano-ucb">GitHub del profe</a>
-                    </li>
-
-                </ul>
-            </section>
-
-        </div>
-
-        <div class="footer-bottom">
-            <p>
-                &copy; 2026 Taller de Diseño Digital 1. Todos los derechos reservados.
-            </p>
-        </div>
-
-    </footer>
+<footer class="site-footer" data-component="footer"></footer>
 </div>
 </body>
 </html>

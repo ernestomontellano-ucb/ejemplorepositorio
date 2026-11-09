@@ -1,0 +1,254 @@
+{
+  "estudiantes": [
+    {
+      "id": "vadhir-aguilar",
+      "nombre": "Vadhir Aguilar",
+      "pagina": "vadhir-aguilar",
+      "proyecto": {
+        "titulo": "",
+        "subcultura": "bikers",
+        "rutaProyecto": "vadhir-aguilar-bikers"
+      }
+    },
+    {
+      "id": "nicole-alvarez",
+      "nombre": "Nicole Alvarez",
+      "pagina": "nicole-alvarez",
+      "proyecto": {
+        "titulo": "",
+        "subcultura": "hiphop",
+        "rutaProyecto": "nicole_alvarez_hiphop"
+      }
+    },
+    {
+      "id": "alejandra-arguedas",
+      "nombre": "Alejandra Arguedas",
+      "pagina": "alejandra-arguedas",
+      "proyecto": {
+        "titulo": "",
+        "subcultura": "graffiti",
+        "rutaProyecto": "alejandra_arguedas_graffiti"
+      }
+    },
+    {
+      "id": "jhoan-azuga",
+      "nombre": "Jhoan Azuga",
+      "pagina": "jhoan-azuga",
+      "proyecto": {
+        "titulo": "",
+        "subcultura": "skaters",
+        "rutaProyecto": "leandro_azuga_skaters"
+      }
+    },
+    {
+      "id": "lizet-blatnik",
+      "nombre": "Lizet Blatnik",
+      "pagina": "lizet-blatnik",
+      "proyecto": {
+        "titulo": "",
+        "subcultura": "otaku",
+        "rutaProyecto": "lizet_blatnik_otaku"
+      }
+    },
+    {
+      "id": "diana-callejas",
+      "nombre": "Diana Callejas",
+      "pagina": "diana-callejas",
+      "proyecto": {
+        "titulo": "",
+        "subcultura": "kpopers",
+        "rutaProyecto": "diana_callejas_kpopers"
+      }
+    },
+    {
+      "id": "helen-chambi",
+      "nombre": "Helen Chambi",
+      "pagina": "helen_chambi",
+      "proyecto": {
+        "titulo": "",
+        "subcultura": "freestyle",
+        "rutaProyecto": "helen_chambi_freestyle"
+      }
+    },
+    {
+      "id": "ana-condarco",
+      "nombre": "Ana Condarco",
+      "pagina": "ana-condarco",
+      "proyecto": {
+        "titulo": "",
+        "subcultura": "kpopers",
+        "rutaProyecto": "cecilia_condarco_kpopers"
+      }
+    },
+    {
+      "id": "adrian-duran",
+      "nombre": "Adrian Duran",
+      "pagina": "adrian-duran",
+      "proyecto": {
+        "titulo": "",
+        "subcultura": "",
+        "rutaProyecto": ""
+      }
+    },
+    {
+      "id": "adriana-fernandez",
+      "nombre": "Adriana Fernandez",
+      "pagina": "adriana-fernandez",
+      "proyecto": {
+        "titulo": "",
+        "subcultura": "skaters",
+        "rutaProyecto": "adriana_fernandez_skaters"
+      }
+    },
+    {
+      "id": "emilce-flores",
+      "nombre": "Emilce Flores",
+      "pagina": "emilce-flores",
+      "proyecto": {
+        "titulo": "",
+        "subcultura": "tatuajes",
+        "rutaProyecto": "emilce_flores_tatuajes"
+      }
+    },
+    {
+      "id": "angel-garitano",
+      "nombre": "Angel Garitano",
+      "pagina": "angel-garitano",
+      "proyecto": {
+        "titulo": "",
+        "subcultura": "rastafri",
+        "rutaProyecto": "angel_garitano_-rastafri"
+      }
+    },
+    {
+      "id": "ignacio-gironas",
+      "nombre": "Ignacio Gironas",
+      "pagina": "ignacio-gironas",
+      "proyecto": {
+        "titulo": "",
+        "subcultura": "",
+        "rutaProyecto": ""
+      }
+    },
+    {
+      "id": "eduardo-gomez",
+      "nombre": "Eduardo Gomez",
+      "pagina": "eduardo-gomez",
+      "proyecto": {
+        "titulo": "",
+        "subcultura": "",
+        "rutaProyecto": ""
+      }
+    },
+    {
+      "id": "kevin-guisbert",
+      "nombre": "Kevin Guisbert",
+      "pagina": "kevin-guisbert",
+      "proyecto": {
+        "titulo": "",
+        "subcultura": "freestylers-rap",
+        "rutaProyecto": "kevin_guisbert_freestylers-rap-"
+      }
+    },
+    {
+      "id": "ariana-guzman",
+      "nombre": "Ariana Guzman",
+      "pagina": "ariana-guzman",
+      "proyecto": {
+        "titulo": "",
+        "subcultura": "otaku",
+        "rutaProyecto": "ariana_guzman_otaku"
+      }
+    },
+    {
+      "id": "nicole-hernandez",
+      "nombre": "Nicole Hernandez",
+      "pagina": "nicole-hernandez",
+      "proyecto": {
+        "titulo": "",
+        "subcultura": "gymrats",
+        "rutaProyecto": "nicole_hernandez_gymrats"
+      }
+    },
+    {
+      "id": "alejandro-lima",
+      "nombre": "Alejandro Lima",
+      "pagina": "alejandro-lima",
+      "proyecto": {
+        "titulo": "",
+        "subcultura": "freestyle",
+        "rutaProyecto": "alejandro_lima_freestyle"
+      }
+    },
+    {
+      "id": "claudia-morales",
+      "nombre": "Claudia Morales",
+      "pagina": "claudia-morales",
+      "proyecto": {
+        "titulo": "",
+        "subcultura": "cosplayers",
+        "rutaProyecto": "claudia_morales_cosplayers"
+      }
+    },
+    {
+      "id": "joshua-ona",
+      "nombre": "Joshua Oña",
+      "pagina": "joshua-ona",
+      "proyecto": {
+        "titulo": "",
+        "subcultura": "comics",
+        "rutaProyecto": "joshua_ona_comics"
+      }
+    },
+    {
+      "id": "maura-reynolds",
+      "nombre": "Maura Reynolds",
+      "pagina": "maura-reynolds",
+      "proyecto": {
+        "titulo": "",
+        "subcultura": "cosplayers",
+        "rutaProyecto": "maura_reynolds_cosplayers"
+      }
+    },
+    {
+      "id": "santiago-rojas",
+      "nombre": "Santiago Rojas",
+      "pagina": "santiago-rojas",
+      "proyecto": {
+        "titulo": "",
+        "subcultura": "scouts",
+        "rutaProyecto": "santiago_rojas_scouts"
+      }
+    },
+    {
+      "id": "jhoan-sirpa",
+      "nombre": "Jhoan Sirpa",
+      "pagina": "jhoan-sirpa",
+      "proyecto": {
+        "titulo": "",
+        "subcultura": "",
+        "rutaProyecto": ""
+      }
+    },
+    {
+      "id": "carla-saenz",
+      "nombre": "Carla Saenz",
+      "pagina": "carla-saenz",
+      "proyecto": {
+        "titulo": "",
+        "subcultura": "",
+        "rutaProyecto": ""
+      }
+    },
+    {
+      "id": "gabriela-yugar",
+      "nombre": "Gabriela Yugar",
+      "pagina": "gabriela-yugar",
+      "proyecto": {
+        "titulo": "",
+        "subcultura": "",
+        "rutaProyecto": ""
+      }
+    }
+  ]
+}

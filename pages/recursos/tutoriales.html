@@ -6,43 +6,17 @@
     <meta name="description" content="Tutoriales externos en YouTube, en español, sobre HTML, CSS, diseño de layouts y fundamentos de JavaScript.">
     <title>Tutoriales | Taller de Diseño Digital 1</title>
     <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/site.css">
+    <script src="../../assets/js/layout.js" defer></script>
     <script src="../../assets/js/main.js" defer></script>
+    <script src="../../assets/js/recursos.js" defer></script>
 </head>
-<body class="resource-page">
+<body class="resource-page" data-recursos="tutoriales">
 <a class="skip-link" href="#contenido">Saltar al contenido</a>
 <div class="container">
-<header class="site-header">
-
-        <p class="site-title"><a href="../../index.html">Taller de Diseño Digital 1</a></p>
-     <!-- =====================================================C
-         MENÚ PRINCIPAL
-    ====================================================== -->
-    <button class="menu-toggle" type="button" aria-expanded="true" aria-controls="main-navigation" aria-label="Cerrar menú">
-        <img src="../../assets/images/iconoir_menu.svg" alt="" width="24" height="24">
-    </button>
-    <nav class="main-navigation" id="main-navigation" aria-label="Navegación principal">
-
-        <ul class="main-menu">
-            <li class="menu-item">
-                <a href="../../index.html#inicio">Inicio</a>
-            </li>
-
-           <li class="menu-item">
-                <a href="../../index.html#estudiantes">Estudiantes</a>
-            </li>
-
-            <li class="menu-item">
-                <a href="../../index.html#proyecto">Proyectos</a>
-            </li>
-
-            <li class="menu-item">
-                <a href="recursos.html" aria-current="location">Recursos</a>
-            </li>
-        </ul>
-
-    </nav>
-
-    </header>
+<header class="site-header" data-component="header" data-section="recursos">
+    <a class="site-title" href="../../index.html">Taller de Diseño Digital 1</a>
+</header>
 <main class="resource-main" id="contenido">
     <div class="resource-shell">
         <nav class="breadcrumbs" aria-label="Ruta de navegación">
@@ -54,78 +28,15 @@
         </nav>
         <header class="resource-hero"><p class="eyebrow">Taller de Diseño Digital 1 · Recursos</p><h1>Tutoriales</h1><p>Tutoriales externos en YouTube, en español, sobre HTML, CSS, diseño de layouts y fundamentos de JavaScript.</p></header>
         <nav class="resource-navigation" aria-label="Secciones de recursos"><ul><li><a href="recursos.html">Todos los recursos</a></li><li><a href="ejemplos_codepen.html">Ejemplos CodePen</a></li><li><a href="tutoriales.html" aria-current="page">Tutoriales</a></li><li><a href="librerias.html">Librerías</a></li><li><a href="vinculos_interes.html">Vínculos de interés</a></li></ul></nav>
-<section class="resource-section">
-<h2>Tutoriales en YouTube</h2>
-<p>Cada enlace lleva directamente al video del creador. Los cursos se pueden consultar por tema y según los conocimientos previos.</p>
-<div class="resource-grid">
-<article class="resource-card">
-    <p class="eyebrow">HTML y CSS · Español</p>
-    <h3>HTML y CSS desde cero</h3>
-    <p>Introducción a la estructura de una página, etiquetas HTML, selectores, tipografía, colores y espaciado. Un punto de partida para comprender cómo se construye una interfaz web.</p>
-    <p class="source-note">Canal: freeCodeCamp Español · Estefanía Cassingena Navone</p>
-    <a class="text-link" href="https://www.youtube.com/watch?v=XqFR2lqBYPs">Ver HTML y CSS en YouTube</a>
-</article>
-<article class="resource-card">
-    <p class="eyebrow">CSS, Flexbox y Grid · Español</p>
-    <h3>Curso completo de CSS</h3>
-    <p>Recorrido por los fundamentos de CSS y la composición de interfaces, con capítulos dedicados a Flexbox y Grid.</p>
-    <p class="source-note">Canal: midudev</p>
-    <a class="text-link" href="https://www.youtube.com/watch?v=TlJbu0BMLaY">Ver el curso de CSS en YouTube</a>
-</article>
-<article class="resource-card">
-    <p class="eyebrow">JavaScript · Español</p>
-    <h3>JavaScript desde cero</h3>
-    <p>Un curso de iniciación a la programación con JavaScript, explicado paso a paso y acompañado de ejemplos.</p>
-    <p class="source-note">Canal: freeCodeCamp Español</p>
-    <a class="text-link" href="https://www.youtube.com/watch?v=ivdTnPl1ND0">Ver JavaScript en YouTube</a>
-</article>
+<div data-recursos-json="data/tutoriales.json">
+    <!-- Las secciones y cards se generan desde el JSON. -->
 </div>
-</section>
+<noscript>Activa JavaScript para consultar los recursos de esta página.</noscript>
 
         <div class="resource-back"><a class="text-link" href="../../index.html">Volver al inicio del taller</a></div>
     </div>
 </main>
-<footer class="site-footer">
-
-        <div class="footer-content">
-
-            <section class="footer-info">
-                <h2>Taller de Diseño Digital 1</h2>
-                <p>
-                    Universidad Católica Boliviana San Pablo
-                </p>
-            </section>
-
-            <section class="footer-contact">
-                <h3>Contacto</h3>
-                <p>
-                    Departamento de Diseño
-                </p>
-                <p>
-                    La Paz, Bolivia
-                </p>
-            </section>
-
-            <section class="footer-links">
-                <h3>Enlaces</h3>
-
-                <ul>
-                    <li>
-                        <a href="https://github.com/ernestomontellano-ucb">GitHub del profe</a>
-                    </li>
-
-                </ul>
-            </section>
-
-        </div>
-
-        <div class="footer-bottom">
-            <p>
-                &copy; 2026 Taller de Diseño Digital 1. Todos los derechos reservados.
-            </p>
-        </div>
-
-    </footer>
+<footer class="site-footer" data-component="footer"></footer>
 </div>
 </body>
 </html>

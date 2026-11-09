@@ -1,0 +1,103 @@
+{
+  "secciones": [
+    {
+      "titulo": "Documentación para resolver dudas",
+      "descripcion": "",
+      "recursos": [
+        {
+          "id": "mdn-web-docs",
+          "titulo": "MDN Web Docs",
+          "etiqueta": "HTML, CSS y JavaScript",
+          "descripcion": "Documentación y ejemplos de HTML, CSS y JavaScript, organizados para consultar conceptos, elementos y propiedades.",
+          "fuente": "",
+          "temas": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+          ],
+          "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development",
+          "textoEnlace": "Abrir la ruta de aprendizaje"
+        },
+        {
+          "id": "tutoriales-wai",
+          "titulo": "Tutoriales WAI",
+          "etiqueta": "Accesibilidad",
+          "descripcion": "Guías sobre estructura de páginas, imágenes y menús accesibles, con explicaciones y ejemplos de implementación.",
+          "fuente": "",
+          "temas": [
+            "Accesibilidad"
+          ],
+          "url": "https://www.w3.org/WAI/tutorials/",
+          "textoEnlace": "Consultar tutoriales de accesibilidad"
+        },
+        {
+          "id": "documentacion-de-github",
+          "titulo": "Documentación de GitHub",
+          "etiqueta": "Colaboración",
+          "descripcion": "Una introducción a repositorios, ramas, commits y pull requests para comprender el trabajo colaborativo.",
+          "fuente": "",
+          "temas": [
+            "GitHub"
+          ],
+          "url": "https://docs.github.com/es/get-started/using-github/hello-world",
+          "textoEnlace": "Repasar el flujo de GitHub"
+        },
+        {
+          "id": "aprender-css-en-web-dev",
+          "titulo": "Aprender CSS en web.dev",
+          "etiqueta": "Layout",
+          "descripcion": "Consulta las guías de distribución para entender por qué una composición cambia al variar el espacio disponible.",
+          "fuente": "",
+          "temas": [
+            "CSS",
+            "Grid"
+          ],
+          "url": "https://web.dev/learn/css/grid",
+          "textoEnlace": "Consultar la guía de Grid"
+        }
+      ]
+    },
+    {
+      "titulo": "Referencias del taller",
+      "descripcion": "",
+      "recursos": [
+        {
+          "id": "mapa-general-del-sitio",
+          "titulo": "Mapa general del sitio",
+          "etiqueta": "Organización",
+          "descripcion": "El mapa muestra la relación entre Inicio, Estudiantes, Proyectos y Recursos, junto con la organización de carpetas del sitio.",
+          "fuente": "",
+          "temas": [
+            "Diseño"
+          ],
+          "url": "https://www.figma.com/board/6a9tHc5z77OtY4CRCufHp8/MAPA-GENERAL?node-id=3-624",
+          "textoEnlace": "Abrir el mapa en FigJam"
+        },
+        {
+          "id": "maquetacion-de-referencia",
+          "titulo": "Maquetación de referencia",
+          "etiqueta": "Diseño responsive",
+          "descripcion": "Referencia visual del taller con composiciones de escritorio, tablet y móvil, y especificaciones de tipografía, colores y componentes.",
+          "fuente": "",
+          "temas": [
+            "Diseño"
+          ],
+          "url": "https://www.figma.com/design/FoatufbUcQDDky7pf515Kc/?node-id=4-3",
+          "textoEnlace": "Abrir la referencia en Figma"
+        },
+        {
+          "id": "repositorio-del-taller",
+          "titulo": "Repositorio del taller",
+          "etiqueta": "Trabajo compartido",
+          "descripcion": "Código del sitio, instrucciones de contribución y avances del grupo. El README describe el flujo de colaboración del taller.",
+          "fuente": "",
+          "temas": [
+            "GitHub"
+          ],
+          "url": "https://github.com/ernestomontellano-ucb/ejemplorepositorio",
+          "textoEnlace": "Visitar el repositorio"
+        }
+      ]
+    }
+  ]
+}
