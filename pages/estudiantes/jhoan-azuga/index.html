@@ -4,18 +4,434 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leandro Azuga</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <style> /* reseteo básico de css */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(250, 250, 250);
+        }
+
+        .portada header {
+            position: relative;   /* referencia para los textos de adentro */
+        }
+
+        .portada img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .portada .texto {
+            position: absolute;   /* se superpone a la imagen */
+            left: 2vw;
+            top: 50%;          /* abajo a la izquierda */
+            transform: translateY(-50%);
+            color: white;
+            font-size: 7vw;
+        }
+
+        .portada h1 {
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 400;
+            font-size: 8.5vw;
+            line-height: 0.9;
+        }
+
+        .portada h2 {
+            font-family: "Outfit", sans-serif;
+            font-weight: 300;
+            font-size: 2vw;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .portada a {
+            position: absolute;   /* se superpone a la imagen */
+            right: 2vw;           /* pegado a la derecha */
+            bottom: 2vw;          /* pegado abajo */
+            color: white;
+            font-family: "Outfit", sans-serif;
+            font-size: 1.5vw;
+            text-transform: uppercase;
+        }
+
+
+        
+        .sobre-mi {
+            position: relative;        /* referencia para los bloques */
+        }
+
+        .sobre-mi img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .sobre-mi .bloques {
+            position: absolute;
+            inset: 0;                  /* cubre toda la imagen de fondo */
+            display: flex;
+            flex-direction: column;    /* un bloque sobre otro */
+            justify-content: center;   /* centro vertical */
+            align-items: center;       /* centro horizontal */
+            gap: 2vw;                  /* espacio entre bloques */
+        }
+
+        .sobre-mi .bloque {
+            position: relative;
+            height: 6vw;
+            width: 20vw;
+            padding: 2vw;
+            display: flex;
+            align-items: center;
+            border-radius: 2vh;
+            transition: width 0.3s ease, height 0.3s ease;   /* NUEVO: anima el cambio de ancho */
+        }
+
+        .sobre-mi .bloque:hover {
+            width: 60vw;                   /* NUEVO: ancho al pasar el cursor */
+            height: calc(6vw * 1.5);
+        }
+
+        .sobre-mi .bloque h2 {
+            font-family: "Outfit", sans-serif;
+            font-weight: 300;
+            font-size: 2vw;
+            color: white;
+            margin: 0;
+            position: absolute;                  /* ahora lo ubicamos con top y left */
+            top: 50%;                            /* centro vertical */
+            left: 50%;                           /* centro horizontal */
+            transform: translate(-50%, -50%);    /* corrige para centrar de verdad */
+            transition: top 0.3s ease, left 0.3s ease, transform 0.3s ease;
+        }
+
+        .sobre-mi .bloque:hover h2 {
+            top: 1.6vw;                            /* arriba */
+            left: 2vw;                           /* izquierda */
+            transform: translate(0, 0);
+        }
+
+        .sobre-mi .bloque .detalle {
+            position: absolute;
+            top: 4.2vw;                  /* debajo del título */
+            left: 2vw;
+            width: 50%;                  /* mitad del ancho del bloque */
+            font-family: "Outfit", sans-serif;
+            font-weight: 300;
+            font-size: 1.3vw;
+            color: white;
+            opacity: 0;                  /* oculto por defecto */
+            pointer-events: none;
+            transition: opacity 0.2s ease;   /* al salir el cursor, desaparece enseguida */
+        }
+
+        .sobre-mi .bloque:hover .detalle {
+            opacity: 1;
+            transition: opacity 0.3s ease 0.3s;   /* espera 0.3s (lo que dura la animación) y luego aparece */
+        }
+
+        .bloque-1 { background-color: #010076; }
+        .bloque-2 { background-color: #010059; }
+        .bloque-3 { background-color: #00003B; }
+        .bloque-4 { background-color: #000000; }
+
+
+
+        .gustos {
+            display: flex;                 /* columnas una al lado de la otra */
+            width: 100%;
+            height: 100vh;                 /* 100% del alto de la pantalla */
+            background-color: black;
+        }
+
+        .gustos .columna {
+            position: relative;                 /* referencia para el degradado */
+            width: 25%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding-bottom: 3vw;
+            text-align: center;
+            transition: width 0.3s ease;        /* anima el cambio de ancho */
+        }
+
+        .gustos .columna::before {
+            content: "";
+            position: absolute;
+            inset: 0;                           /* cubre toda la columna */
+            background: linear-gradient(to top, #000000, #0A28A7);
+            opacity: 0;                         /* invisible por defecto */
+            transition: opacity 0.3s ease;
+        }
+
+        .gustos .columna:hover::before {
+            opacity: 1;                         /* aparece al pasar el cursor */
+        }
+
+        .gustos:hover .columna {
+            width: 22%;                         /* cuando el cursor está en la sección, todas se achican */
+        }
+
+        .gustos .columna:hover {
+            width: 36%;                         /* y la que tiene el cursor crece */
+        }
+
+        .gustos .contenido {
+            position: relative;                 /* queda por encima del degradado */
+            width: 25vw;                        /* ancho fijo, no cambia con la columna */
+            flex-shrink: 0;
+        }
+
+        .gustos .sub {
+            font-family: "Outfit", sans-serif;
+            font-weight: 300;
+            font-size: 1.3vw;
+            line-height: 1.3;
+            color: white;
+            padding: 0 2vw;                     /* margen lateral para que no toque los bordes */
+            margin-bottom: 1.5vw;               /* separación con el título */
+            opacity: 0;                         /* oculto por defecto */
+            transition: opacity 0.3s ease;
+        }
+
+        .gustos .columna:hover .sub {
+            opacity: 1;                         /* aparece al pasar el cursor */
+        }
+
+        .gustos h2 {
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 400;
+            font-size: 4.5vw;
+            color: white;
+            line-height: 0.85;
+        }
+
+
+
+        .inspiracion {
+            display: flex;
+            justify-content: center;            /* centra el conjunto horizontalmente */
+            align-items: center;                /* centro vertical */
+            gap: 6vw;                           /* espacio entre imagen y texto */
+            width: 100%;
+            height: 100vh;
+            padding: 0 8vw;
+            background-color: black;
+        }
+
+        .inspiracion .imagen {
+            position: relative;                 /* referencia para el degradado */
+            width: 30vw;
+            flex-shrink: 0;
+        }
+
+        .inspiracion .imagen img {
+            position: relative;                 /* queda por encima del degradado */
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 2vh;
+        }
+
+        .inspiracion .texto-inspiracion {
+            width: 35vw;
+        }
+
+        .inspiracion h2 {
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 400;
+            font-size: 7vw;
+            color: white;
+            line-height: 0.85;
+            margin-bottom: 2vw;
+        }
+
+        .inspiracion h3 {
+            font-family: "Outfit", sans-serif;
+            font-weight: 300;
+            font-size: 1.5vw;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: white;
+            padding-bottom: 1.5vw;
+            margin-bottom: 1.5vw;
+            border-bottom: 1px solid #0A28A7;   /* línea azul fina bajo el subtítulo */
+        }
+
+        .inspiracion p {
+            font-family: "Outfit", sans-serif;
+            font-weight: 300;
+            font-size: 1.3vw;
+            line-height: 1.5;
+            color: white;
+        }
+
+
+
+        .barra {
+            position: fixed;                    /* se queda en su lugar aunque se haga scroll */
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 100;                       /* siempre por encima del resto */
+            display: flex;
+            justify-content: space-between;     /* logo a la izquierda, enlaces a la derecha */
+            align-items: center;
+            padding: 1.2vw 2vw;
+        }
+
+        .barra .logo {
+            font-family: "Outfit", sans-serif;
+            font-size: 1vw;
+            color: white;
+        }
+
+        .barra .enlaces {
+            display: flex;
+            gap: 3vw;                           /* espacio entre enlaces */
+        }
+
+        .barra .enlaces a {
+            font-family: "Outfit", sans-serif;
+            font-weight: 300;
+            font-size: 1vw;
+            text-decoration: none;
+            color: white;
+            padding-bottom: 0.3vw;
+            border-bottom: 1px solid transparent;   /* línea invisible por defecto */
+            transition: border-color 0.3s ease;
+        }
+
+        .barra .enlaces a:hover {
+            border-color: #ffffff;              /* aparece la línea azul al pasar el cursor */
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <img src="/pages/estudiantes/jhoan-azuga/imagenes/Perfil.jpg" alt="Fotografía Personal" width="10%">
-        <h1>Jhoan Leandro Azuga Colque</h1>
-        <h2>Diseñador Digital</h2>
-        <p>Complicarse la vida no siempre es malo</p>
-        <a href="https://github.com/leoplak">github</a>
-    </header>
+    <nav class="barra">
+        <span class="logo">Diseñador Digital - LEO</span>
+        <div class="enlaces">
+            <a href="#portada">Portada</a>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#gustos">Gustos e intereses</a>
+            <a href="#inspiracion">Inspiración</a>
+        </div>
+    </nav>
+
+    <div class="portada" id="portada">
+        <header>
+            <img src="/ejemplorepositorio/pages/estudiantes/jhoan-azuga/imagenes/Perfil.png" alt="Portada">
+            <div class="texto">
+                <h1>Jhoan Leandro</h1>
+                <h1>Azuga Colque</h1>
+            </div>
+            <a href="https://github.com/leoplak">github</a>
+        </header>
+    </div>
 
     <main>
+        <section class="sobre-mi" id="sobre-mi">
+            <img src="/ejemplorepositorio/pages/estudiantes/jhoan-azuga/imagenes/Fondo.png" alt="Fondo">
+            <div class="bloques">
+                <div class="bloque bloque-1">
+                    <h2>Origen</h2>
+                    <p class="detalle">21 años, soy un estudiante foráneo, que vive actualmente en la ciudad de La Paz.</p>
+                </div>
+                <div class="bloque bloque-2">
+                    <h2>Formación</h2>
+                    <p class="detalle">Estudiante de Diseño Digital en la Universidad Católica Boliviana.</p>
+                </div>
+                <div class="bloque bloque-3">
+                    <h2>Desempeño</h2>
+                    <p class="detalle">Siempre dispuesto a aprender, comprometido, planificado y siempre avanzado un paso extra.</p>
+                </div>
+                <div class="bloque bloque-4">
+                    <h2>Personalidad</h2>
+                    <p class="detalle">Siempre positivo ante cualquier situación, tratando de entender el mundo que me rodea.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="gustos" id="gustos">
+            <div class="columna">
+                <div class="contenido">
+                    <p class="sub">Apasionado no solo por los videojuegos, sino también por poder crearlos, desde la creación de personajes hasta la codificación del entorno.</p>
+                    <h2>Desarrollo de videojuegos</h2>
+                </div>
+            </div>
+            <div class="columna">
+                <div class="contenido">
+                    <p class="sub">Amante de la cultura boliviana, en especial de las danzas que lleva nuestro país. 5 años de trayectoria y actual miembro del Ballet de Danza Folclórica de la Universidad.</p>
+                    <h2>Danza folklórica</h2>
+                </div>
+            </div>
+            <div class="columna">
+                <div class="contenido">
+                    <p class="sub">Siempre dispuesto a vivir nuevas experiencias, tratando de saber y conocer más sobre el mundo, para así aprender más del entorno que me rodea.</p>
+                    <h2>Tener nuevas experiencias</h2>
+                </div>
+            </div>
+            <div class="columna">
+                <div class="contenido">
+                    <p class="sub">Combinar elementos como el arte y el diseño con la ingeniería y la matemática es algo que siempre ha sido característico en mí y que trato de incluir en varios proyectos.</p>
+                    <h2>Tecnología creativa</h2>
+                </div>
+            </div>
+        </section>
 
+        <section class="inspiracion" id="inspiracion">
+            <div class="imagen">
+                <img src="/ejemplorepositorio/pages/estudiantes/jhoan-azuga/imagenes/Imagen.jpg" alt="Referencia Videojuego">
+            </div>
+            <div class="texto-inspiracion">
+                <h2>Inspiración</h2>
+                <h3>World of Goo - Videojuego</h3>
+                <p>Videojuego que utiliza la narrativa visual uniendo elementos de física y lógica para contar una historia.
+                    La forma en que el juego comunica ideas a través de la interacción y el comportamiento de los objetos.
+                    Además de todas las herramientas narrativas en sí misma.</p>
+            </div>
+        </section>
     </main>
+
+    <script>
+        const duracionScroll = 1000;   // duración en milisegundos
+
+        function suavizar(t) {
+            // empieza lento, acelera en el medio y frena al llegar
+            return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+        }
+
+        function irASeccion(destino) {
+            const inicio = window.scrollY;                           // posición actual
+            const distancia = destino.getBoundingClientRect().top;   // cuánto falta para llegar a la sección
+            const tiempoInicio = performance.now();
+
+            function paso(ahora) {
+                const progreso = Math.min((ahora - tiempoInicio) / duracionScroll, 1);   // va de 0 a 1
+                window.scrollTo(0, inicio + distancia * suavizar(progreso));
+                if (progreso < 1) requestAnimationFrame(paso);       // sigue hasta completar
+            }
+            requestAnimationFrame(paso);
+        }
+
+        document.querySelectorAll('.barra .enlaces a').forEach(enlace => {
+            enlace.addEventListener('click', e => {
+                e.preventDefault();                                  // cancela el salto inmediato del href
+                irASeccion(document.querySelector(enlace.getAttribute('href')));
+            });
+        });
+    </script>
 </body>
 </html>

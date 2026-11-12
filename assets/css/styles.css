@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+
+    /* colors */
+    --bg_header: #0024D5;
+    --button: #000;
+    --button_hover: #FFF;
+    --black: #000;
+    --white: #FFF;
+
+    /* fonts */
+    --font_principal: "Outfit", sans-serif;
+    --font2: "Bebas Neue", sans-serif;
+
+    /* spacers */
+    --s8: 8px;
+    --s16: 16px;
+    --s24: 24px;
+    --s32: 32px;
+    --s40: 40px;
+    --s48: 48px;
+    --s56: 56px;
+    --s64: 64px;
+    --s72: 72px;
+    --s80: 80px;
+
+    /* semantics */
+    --gap-nav: var(--s16);
+    --button-padding-x: var(--s16);
+    --button-padding-y: var(--s40);
+}
+
+.site-header{
+    background-color: var(--bg_header);
+    padding: var(--s32);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.site-header h1{
+    font-family: var(--font_principal);
+    font-size: 40px;
+    color: var(--white)
+}
+
+.site-header .main-navigation{
+    
+}
+
+.site-header .main-navigation .main-menu{
+    display: flex;
+    gap: var(--gap-nav);
+}
+
+.site-header .main-navigation .main-menu .menu-item{
+
+}
+
+.site-header .main-navigation .main-menu .menu-item a{
+    background-color: var(--button);
+    padding: var(--button-padding-x) var(--button-padding-y);
+    display: inline-block;
+    color: var(--white);
+    font-family: var(--font_principal);
+    border-radius: 55px;
+    font-weight: bold;
+}
+
+.site-header .main-navigation .main-menu .menu-item a:hover{
+    background-color: var(--button_hover);
+    color: var(--black)
+}
